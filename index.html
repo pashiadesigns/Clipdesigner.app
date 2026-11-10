@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ClipDesigner · Clip anything. Design everything.</title>
+<meta name="description" content="Image and video capturing for the everyday user with feature-rich design tools for power users. Free and open source for Windows. No account, no telemetry.">
+<meta name="theme-color" content="#0d1013">
+<meta property="og:title" content="ClipDesigner · Clip anything. Design everything.">
+<meta property="og:description" content="Image and video capturing for the everyday user with feature-rich design tools for power users.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top" aria-label="ClipDesigner home">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="mark-frame">
+          <path d="M12 23V14a2 2 0 0 1 2-2h9"/><path d="M41 12h9a2 2 0 0 1 2 2v9"/>
+          <path d="M52 41v9a2 2 0 0 1-2 2h-9"/><path d="M23 52h-9a2 2 0 0 1-2-2v-9"/>
+        </g>
+        <path d="M24 40l13-13 4 4-13 13-6 2z" class="mark-pen"/>
+        <path d="M39 25l2.5-2.5a2.8 2.8 0 0 1 4 4L43 29z" class="mark-tip"/>
+      </svg>
+      <span>ClipDesigner</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#toolkit">Toolkit</a>
+      <a href="#who">Who it's for</a>
+      <a href="#principles">Principles</a>
+      <a href="#download">Download</a>
+      <a href="https://github.com/pashiadesigns/ClipCraft" class="nav-gh">GitHub</a>
+    </nav>
+    <a class="btn btn-primary btn-sm topbar-cta" href="#download">Download</a>
+    <button class="menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<aside class="index" aria-hidden="true">
+  <ol>
+    <li><a href="#top" data-index="top">ClipDesigner</a></li>
+    <li><a href="#toolkit" data-index="toolkit">Toolkit</a></li>
+    <li><a href="#who" data-index="who">Who it's for</a></li>
+    <li><a href="#principles" data-index="principles">Principles</a></li>
+    <li><a href="#download" data-index="download">Get started</a></li>
+  </ol>
+</aside>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Windows · Open source · Beta 3</p>
+      <h1>Clip anything.<br><span class="accent">Design</span> everything.</h1>
+      <p class="lede">Image and video capturing for the everyday user with feature-rich design tools for power users.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://github.com/pashiadesigns/ClipCraft/releases/download/v1.0.0-beta.3/clipcraft-1.0.0-beta.3-windows-x64.msi">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16" /></svg>
+          Download for Windows
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/pashiadesigns/ClipCraft">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          Browse on GitHub
+        </a>
+      </div>
+      <p class="spec">For Windows 10/11 · MSI installer (64-bit) · 67 MB</p>
+      <p class="spec-link"><a href="#download">Portable ZIP, checksums and source</a></p>
+    </div>
+    <figure class="hero-shot">
+      <div class="viewfinder" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <img src="images/video-workflow.png" width="1440" height="960" alt="The video editor with annotation, video and narration tracks and the Motion properties panel">
+    </figure>
+  </div>
+  <div class="wrap">
+    <ul class="trust">
+      <li>Open source · Apache-2.0</li>
+      <li>Runs on your PC</li>
+      <li>No account · No telemetry</li>
+      <li>Built in Rust</li>
+    </ul>
+    <p class="rename-note"><strong>New name, same app.</strong> ClipDesigner is the new name for ClipCraft. Beta 3 still installs and appears as ClipCraft.</p>
+  </div>
+</section>
+
+<section class="section" id="toolkit">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker"><span>01</span> / The toolkit</p>
+      <h2>Seven workspaces.<br>One studio.</h2>
+      <p class="section-lede">Capture, annotate, edit, narrate and review in one window. Every object stays editable until you export, so the guide you made last month is still a starting point, not a flattened picture.</p>
+    </header>
+
+    <div class="cards">
+      <article class="card">
+        <img src="images/capture-workflow.png" width="1440" height="960" loading="lazy" alt="Capture Clip settings open over the editor">
+        <div class="card-body">
+          <p class="card-num"><span>01</span> Capture</p>
+          <h3>Capture Clip &amp; Capture Video</h3>
+          <p>Region, window or full screen. Stitch a scrolling region, or record your clicks as an editable Step by Step guide. Capture from a hotkey or the tray, with a delay if you need one.</p>
+          <ul class="tags"><li class="tag-status">In beta 3</li><li>Region</li><li>Window</li><li>Scrolling</li><li>Step by Step</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/image-workflow.png" width="1440" height="960" loading="lazy" alt="A three-step image guide with the Focus window properties">
+        <div class="card-body">
+          <p class="card-num"><span>02</span> Image guides</p>
+          <h3>Point out what matters</h3>
+          <p>Arrows, callouts, Icons, numbered Steps and Penlighter, all from presets. Focus and Magnify draw the eye. Multipage layouts with Page Setup, headers, footers, bleed and crop marks.</p>
+          <ul class="tags"><li class="tag-status">In beta 3</li><li>Steps</li><li>Focus</li><li>Magnify</li><li>PDF</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/video-workflow.png" width="1440" height="960" loading="lazy" alt="The video editor timeline with annotation, video and voiceover tracks">
+        <div class="card-body">
+          <p class="card-num"><span>03</span> Video editor</p>
+          <h3>Screen video with context</h3>
+          <p>Tracks for video, pictures, narration and annotations. Zooms that follow the recorded cursor, keyframes, webcam picture-in-picture, and GIF Studio for short loops.</p>
+          <ul class="tags"><li class="tag-status">In beta 3</li><li>Keyframes</li><li>Webcam</li><li>GIF Studio</li><li>MP4</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/privacy-review.png" width="1440" height="960" loading="lazy" alt="Export video listing a tracked redaction that needs review">
+        <div class="card-body">
+          <p class="card-num"><span>04</span> Privacy review</p>
+          <h3>Review before you share</h3>
+          <p>Find Sensitive Info reads images and video on your PC. Redactions follow text as it moves or scrolls, and Export video lists every one that still needs your review.</p>
+          <ul class="tags"><li class="tag-status">In beta 3</li><li>Windows OCR</li><li>Tracked redaction</li><li>Review list</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/effects-workstation.png" width="962" height="768" loading="lazy" alt="The Effects Workstation with a parametric EQ and a vocal chain">
+        <div class="card-body">
+          <p class="card-num"><span>05</span> Narration &amp; audio</p>
+          <h3>Narration that sounds finished</h3>
+          <p>Record takes, then shape them with an ordered chain of EQ, compression, clarity, de-essing, leveling and limiting. Analyze Voice suggests settings; the original is kept.</p>
+          <ul class="tags"><li class="tag-status">In beta 3</li><li>Parametric EQ</li><li>De-ess</li><li>Analyze Voice</li></ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/library.png" width="1440" height="960" loading="lazy" alt="The Library with folders, sources, tags and a pinned capture">
+        <div class="card-body">
+          <p class="card-num"><span>06</span> Library</p>
+          <h3>Every capture, findable</h3>
+          <p>Search everything you've captured. Sort it into folders, tag it, pin favorites, and filter by type, app, website or date.</p>
+          <ul class="tags"><li class="tag-status">In beta 3</li><li>Folders</li><li>Tags</li><li>Pins</li><li>Search</li></ul>
+        </div>
+      </article>
+
+      <article class="card card-wide">
+        <img src="images/help.png" width="1200" height="780" loading="lazy" alt="The Help window with illustrated, searchable articles">
+        <div class="card-body">
+          <p class="card-num"><span>07</span> Help</p>
+          <h3>Answers where you're working</h3>
+          <p>Illustrated, searchable articles cover every tool. Hover any control for a tip, or press F1 to open its article. Preferences hold shortcuts, capture settings and the toolbar.</p>
+          <ul class="tags"><li class="tag-status">In beta 3</li><li>F1 on any control</li><li>Illustrated</li><li>Searchable</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="who">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker"><span>02</span> / Who it's for</p>
+      <h2>Built for power users.<br>Easy on day one.</h2>
+      <p class="section-lede">Most power users start with a quick screenshot. It's the same app and the same project files, so the depth is there when you need it.</p>
+    </header>
+
+    <div class="who">
+      <article class="who-col who-power">
+        <p class="who-label">Power users</p>
+        <dl>
+          <dt>Who they are</dt>
+          <dd>Trainers, instructional designers, documentation teams, product marketers and tutorial creators.</dd>
+          <dt>How they work</dt>
+          <dd>ClipDesigner stays open for hours, and they produce a series of material, not one-offs.</dd>
+          <dt>What they make</dt>
+          <dd><ul>
+            <li>A 40-page onboarding manual with sections, headers, footers and page numbers</li>
+            <li>Product tutorials with webcam, cursor-following zooms and animated callouts</li>
+            <li>Clean narration with EQ, compression and de-essing</li>
+            <li>GIF loops for release notes and social posts</li>
+            <li>Videos recorded on live systems, with every tracked redaction reviewed</li>
+          </ul></dd>
+          <dt>Where it ends up</dt>
+          <dd>Training courses, help centers, video channels, release notes and printed manuals.</dd>
+        </dl>
+      </article>
+      <article class="who-col">
+        <p class="who-label">Everyday explainers</p>
+        <dl>
+          <dt>Who they are</dt>
+          <dd>Coordinators, analysts, support staff and team leads, or whoever on the team gets asked "how do I…?"</dd>
+          <dt>How they work</dt>
+          <dd>A few times a week, a few minutes at a time. Each capture is a one-off answer.</dd>
+          <dt>What they make</dt>
+          <dd><ul>
+            <li>Point out a button for a colleague: capture, add an arrow, paste into chat</li>
+            <li>Turn "how do I submit an expense?" into a six-step PDF guide</li>
+            <li>Hide a customer name before sending a screenshot</li>
+            <li>A 90-second narrated walkthrough of where a setting lives</li>
+            <li>Find last Tuesday's capture in the Library</li>
+          </ul></dd>
+          <dt>Where it ends up</dt>
+          <dd>Chat messages, email, support tickets and wiki pages.</dd>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="principles">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker"><span>03</span> / Principles</p>
+      <h2>The rules every<br>feature follows.</h2>
+    </header>
+    <ol class="principles">
+      <li>
+        <span class="p-num">01</span>
+        <h3>Yours, locally</h3>
+        <p>Captures, projects and your Library stay on your PC. There's no ClipDesigner account to create.</p>
+      </li>
+      <li>
+        <span class="p-num">02</span>
+        <h3>No telemetry</h3>
+        <p>The app doesn't report what you do, and there's no background updater. You decide when to download a new version.</p>
+      </li>
+      <li>
+        <span class="p-num">03</span>
+        <h3>Editable to the end</h3>
+        <p>Crops, filters, perspective and redactions never silently flatten. Drags and sliders preview live, with one Undo per change.</p>
+      </li>
+      <li>
+        <span class="p-num">04</span>
+        <h3>Privacy you can review</h3>
+        <p>Detection suggests and you decide. Exported redactions remove what they cover. Detection can miss things, so ClipDesigner shows you what still needs a look.</p>
+      </li>
+      <li>
+        <span class="p-num">05</span>
+        <h3>Native, built in Rust</h3>
+        <p>A real Windows app with its own rendering engine, so the preview you edit matches the file you export.</p>
+      </li>
+      <li>
+        <span class="p-num">06</span>
+        <h3>Open source</h3>
+        <p>Apache-2.0, with every line on GitHub. Each release ships with checksums, an SBOM and its source archive.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="download">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker"><span>04</span> / Get started</p>
+      <h2>Download the beta.</h2>
+      <p class="section-lede">Version 1.0.0-beta.3 for Windows 10 and 11 (64-bit). Free, with no account and no subscription.</p>
+    </header>
+
+    <div class="downloads">
+      <a class="dl dl-main" href="https://github.com/pashiadesigns/ClipCraft/releases/download/v1.0.0-beta.3/clipcraft-1.0.0-beta.3-windows-x64.msi">
+        <span class="dl-badge">Recommended</span>
+        <span class="dl-title">MSI installer</span>
+        <span class="dl-desc">Installs for your Windows account only, with a Start menu shortcut and project file associations.</span>
+        <span class="dl-meta">clipcraft-1.0.0-beta.3-windows-x64.msi · 67 MB</span>
+      </a>
+      <a class="dl" href="https://github.com/pashiadesigns/ClipCraft/releases/download/v1.0.0-beta.3/clipcraft-1.0.0-beta.3-windows-x64.zip">
+        <span class="dl-badge dl-badge-quiet">No install</span>
+        <span class="dl-title">Portable ZIP</span>
+        <span class="dl-desc">Extract every file, then run ClipCraft.exe. Nothing is installed.</span>
+        <span class="dl-meta">clipcraft-1.0.0-beta.3-windows-x64.zip · 28 MB</span>
+      </a>
+    </div>
+
+    <ul class="dl-links">
+      <li><a href="https://github.com/pashiadesigns/ClipCraft/releases/tag/v1.0.0-beta.3">Release notes</a></li>
+      <li><a href="https://github.com/pashiadesigns/ClipCraft/releases/download/v1.0.0-beta.3/SHA256SUMS.txt">SHA256 checksums</a></li>
+      <li><a href="https://github.com/pashiadesigns/ClipCraft/blob/main/docs/installing.md">Install &amp; storage locations</a></li>
+      <li><a href="https://github.com/pashiadesigns/ClipCraft/blob/main/docs/building.md">Build from source</a></li>
+    </ul>
+
+    <div class="beta">
+      <p class="beta-title">Before you install</p>
+      <ul>
+        <li>This beta is unsigned, so Windows SmartScreen may warn before it runs.</li>
+        <li>Old development project formats aren't supported. Back up important work before updating.</li>
+        <li>Sensitive-info detection assists your review and can't guarantee full coverage. Check the whole export before sharing.</li>
+        <li>PDF text is exported as outlines, not searchable text. There's no automatic updater.</li>
+      </ul>
+      <p class="beta-more">Read the full <a href="https://github.com/pashiadesigns/ClipCraft#beta-notes">beta notes</a> and the <a href="https://github.com/pashiadesigns/ClipCraft/blob/main/docs/security-model.md">security and data model</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="closer">
+  <div class="wrap closer-inner">
+    <p class="kicker">Open source · Free</p>
+    <h2>Shape what comes next.</h2>
+    <p>Report a bug, suggest a feature or follow development on GitHub.</p>
+    <div class="cta-row cta-center">
+      <a class="btn btn-primary" href="https://github.com/pashiadesigns/ClipCraft/issues">Open an issue</a>
+      <a class="btn btn-ghost" href="https://github.com/pashiadesigns/ClipCraft">Star on GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="#top">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" class="mark-frame">
+            <path d="M12 23V14a2 2 0 0 1 2-2h9"/><path d="M41 12h9a2 2 0 0 1 2 2v9"/>
+            <path d="M52 41v9a2 2 0 0 1-2 2h-9"/><path d="M23 52h-9a2 2 0 0 1-2-2v-9"/>
+          </g>
+          <path d="M24 40l13-13 4 4-13 13-6 2z" class="mark-pen"/>
+          <path d="M39 25l2.5-2.5a2.8 2.8 0 0 1 4 4L43 29z" class="mark-tip"/>
+        </svg>
+        <span>ClipDesigner</span>
+      </a>
+      <p>Screenshots, step-by-step guides and narrated screen video, made on your own PC.</p>
+    </div>
+    <nav class="footer-col" aria-label="Product">
+      <p class="footer-head">Product</p>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#who">Who it's for</a>
+      <a href="#principles">Principles</a>
+      <a href="#download">Download</a>
+    </nav>
+    <nav class="footer-col" aria-label="Resources">
+      <p class="footer-head">Resources</p>
+      <a href="https://github.com/pashiadesigns/ClipCraft/releases">Releases</a>
+      <a href="https://github.com/pashiadesigns/ClipCraft/blob/main/docs/installing.md">Installing</a>
+      <a href="https://github.com/pashiadesigns/ClipCraft/blob/main/docs/security-model.md">Security &amp; data</a>
+      <a href="https://github.com/pashiadesigns/ClipCraft/blob/main/docs/building.md">Building</a>
+    </nav>
+    <nav class="footer-col" aria-label="Project">
+      <p class="footer-head">Project</p>
+      <a href="https://github.com/pashiadesigns/ClipCraft">Source code</a>
+      <a href="https://github.com/pashiadesigns/ClipCraft/issues">Issues</a>
+      <a href="https://github.com/pashiadesigns/ClipCraft/blob/main/docs/licensing.md">Licensing</a>
+      <a href="https://github.com/pashiadesigns/ClipCraft/blob/main/SECURITY.md">Report a vulnerability</a>
+    </nav>
+  </div>
+  <div class="wrap footer-base">
+    <span>© <span id="year">2026</span> Pashia Designs</span>
+    <span>Free and open source · Apache-2.0</span>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>
