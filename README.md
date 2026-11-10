@@ -1,8 +1,8 @@
-# ClipDesigner website
+﻿# ClipDesigner website
 
 **Clip anything. Design everything.**
 
-Source for <https://pashiadesigns.github.io/ClipDesigner/>, the website for ClipDesigner: image and video capturing for the everyday user with feature-rich design tools for power users.
+Source for <https://clipdesigner.app>, the website for ClipDesigner: image and video capturing for the everyday user with feature-rich design tools for power users.
 
 ClipDesigner is the new name for ClipCraft. The app's source code, releases and issues live at <https://github.com/pashiadesigns/ClipCraft>.
 
