@@ -28,6 +28,7 @@
       <span>ClipDesigner</span>
     </a>
     <nav class="nav" id="nav" aria-label="Main">
+      <a href="#demo">Try it</a>
       <a href="#toolkit">Toolkit</a>
       <a href="#who">Who it's for</a>
       <a href="#principles">Principles</a>
@@ -44,6 +45,7 @@
 <aside class="index" aria-hidden="true">
   <ol>
     <li><a href="#top" data-index="top">ClipDesigner</a></li>
+    <li><a href="#demo" data-index="demo">In action</a></li>
     <li><a href="#toolkit" data-index="toolkit">Toolkit</a></li>
     <li><a href="#who" data-index="who">Who it's for</a></li>
     <li><a href="#principles" data-index="principles">Principles</a></li>
@@ -88,17 +90,165 @@
   </div>
 </section>
 
+<section class="section" id="demo">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="kicker"><span>01</span> / See it in action</p>
+      <h2>See ClipDesigner<br>in action.</h2>
+      <p class="section-lede">Try simplified versions of three everyday jobs right here. Everything runs in this page; nothing is uploaded.</p>
+    </header>
+
+    <div class="demo">
+      <div class="demo-tabs" role="tablist" aria-label="Demo">
+        <button type="button" role="tab" id="tab-annotate" aria-controls="demo-annotate" aria-selected="true" data-mode="annotate"><span>01</span> Annotate a capture</button>
+        <button type="button" role="tab" id="tab-redact" aria-controls="demo-redact" aria-selected="false" tabindex="-1" data-mode="redact"><span>02</span> Redact before sharing</button>
+        <button type="button" role="tab" id="tab-video" aria-controls="demo-video" aria-selected="false" tabindex="-1" data-mode="video"><span>03</span> Edit a screen video</button>
+      </div>
+
+      <div class="demo-window">
+        <div class="demo-titlebar" aria-hidden="true">
+          <span class="demo-app"><svg class="mark" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" class="mark-frame"><path d="M12 23V14a2 2 0 0 1 2-2h9"/><path d="M41 12h9a2 2 0 0 1 2 2v9"/><path d="M52 41v9a2 2 0 0 1-2 2h-9"/><path d="M23 52h-9a2 2 0 0 1-2-2v-9"/></g><path d="M24 40l13-13 4 4-13 13-6 2z" class="mark-pen"/></svg>Untitled — ClipDesigner</span>
+          <span class="demo-winbtns"><i></i><i></i><i></i></span>
+        </div>
+
+        <!-- Annotate -->
+        <div class="demo-panel" id="demo-annotate" role="tabpanel" aria-labelledby="tab-annotate">
+          <div class="demo-tools" role="toolbar" aria-label="Annotation tools">
+            <button type="button" class="tool" data-tool="arrow" aria-pressed="true"><svg viewBox="0 0 24 24"><path d="M5 19L18 6M18 6h-8M18 6v8"/></svg>Arrow</button>
+            <button type="button" class="tool" data-tool="step" aria-pressed="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M11 9l2-1v8"/></svg>Step</button>
+            <button type="button" class="tool" data-tool="highlight" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M4 20h16M7 15l8-8 3 3-8 8H7z"/></svg>Highlight</button>
+            <button type="button" class="tool" data-tool="blur" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M5 5h3v3H5zM10.5 5h3v3h-3zM16 5h3v3h-3zM5 10.5h3v3H5zM16 10.5h3v3h-3zM5 16h3v3H5zM10.5 16h3v3h-3zM16 16h3v3h-3z"/></svg>Blur</button>
+            <span class="tools-gap"></span>
+            <button type="button" class="tool tool-quiet" data-act="undo"><svg viewBox="0 0 24 24"><path d="M9 14L4 9l5-5M4 9h10a6 6 0 0 1 0 12h-3"/></svg>Undo</button>
+            <button type="button" class="tool tool-quiet" data-act="clear">Clear</button>
+          </div>
+          <div class="demo-stage ann-stage">
+            <div class="mock-page" aria-hidden="true">
+              <div class="mp-head">FIELDNOTES <i>/</i> Team workspace</div>
+              <div class="mp-body">
+                <p class="mp-title">Your next great walkthrough</p>
+                <span class="mp-bar" style="width:44%"></span>
+                <div class="mp-stats">
+                  <div><b>12</b><span class="mp-bar"></span></div>
+                  <div><b>4</b><span class="mp-bar" style="width:62%"></span></div>
+                  <div><b>28</b><span class="mp-bar" style="width:84%"></span></div>
+                </div>
+                <div class="mp-card">
+                  <p class="mp-sub">Project checklist</p>
+                  <ul>
+                    <li>Prepare your workspace</li>
+                    <li>Capture the essential steps</li>
+                    <li>Review and share with your team</li>
+                  </ul>
+                  <span class="mp-btn">Share guide</span>
+                </div>
+              </div>
+            </div>
+            <div class="ann-blurs"></div>
+            <svg class="ann-svg" aria-hidden="true"></svg>
+            <div class="ann-steps"></div>
+            <div class="ann-surface" role="img" aria-label="Drawing area. Drag to draw with the selected tool, or tap to add a numbered step."></div>
+          </div>
+        </div>
+
+        <!-- Redact -->
+        <div class="demo-panel" id="demo-redact" role="tabpanel" aria-labelledby="tab-redact" hidden>
+          <div class="demo-tools">
+            <button type="button" class="tool tool-primary" data-act="scan"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>Find sensitive info</button>
+            <label class="switch"><input type="checkbox" data-act="originals"><span></span>Show originals</label>
+            <span class="tools-gap"></span>
+            <span class="tools-status" aria-live="polite">Not scanned yet</span>
+          </div>
+          <div class="redact-grid">
+            <div class="demo-stage redact-stage">
+              <div class="acct" tabindex="0" aria-label="Sample account page">
+                <div class="mp-head">FIELDNOTES <i>/</i> Account</div>
+                <p class="mp-title acct-title">Account settings</p>
+                <div class="acct-row"><span>Display name</span><b>Jordan Lee</b></div>
+                <div class="acct-row"><span>Email</span><b><em class="pii" data-kind="Email address">jordan.lee@example.com</em></b></div>
+                <div class="acct-row"><span>Phone</span><b><em class="pii" data-kind="Phone number">(555) 010-2043</em></b></div>
+                <div class="acct-row"><span>Workspace</span><b>Fieldnotes Team</b></div>
+                <div class="acct-row"><span>Card on file</span><b><em class="pii" data-kind="Card number">4111 1111 1111 1111</em></b></div>
+                <div class="acct-row"><span>Plan</span><b>Team · 12 seats</b></div>
+                <div class="acct-row"><span>Billing email</span><b><em class="pii" data-kind="Email address" data-review="Low confidence">billing@example.com</em></b></div>
+              </div>
+              <div class="scan-band" aria-hidden="true"></div>
+            </div>
+            <aside class="redact-side">
+              <p class="side-head">Redactions</p>
+              <ol class="redact-items"></ol>
+              <p class="redact-empty">Press <b>Find sensitive info</b> to scan the page.</p>
+              <button type="button" class="redact-export" disabled>Export video <span class="redact-count"></span></button>
+            </aside>
+          </div>
+        </div>
+
+        <!-- Video -->
+        <div class="demo-panel" id="demo-video" role="tabpanel" aria-labelledby="tab-video" hidden>
+          <div class="demo-tools">
+            <button type="button" class="tool tool-primary vid-play" data-act="play"><svg viewBox="0 0 24 24" class="i-play"><path d="M8 5v14l11-7z"/></svg><svg viewBox="0 0 24 24" class="i-pause"><path d="M8 5v14M16 5v14"/></svg><span>Play</span></button>
+            <label class="switch"><input type="checkbox" data-act="follow" checked><span></span>Zoom follows cursor</label>
+            <span class="tools-gap"></span>
+            <span class="tools-status vid-time">00:00.00 / 00:10.00</span>
+          </div>
+          <div class="demo-stage vid-stage">
+            <div class="vid-inner">
+              <div class="mock-page" aria-hidden="true">
+                <div class="mp-head">FIELDNOTES <i>/</i> Team workspace</div>
+                <div class="mp-body">
+                  <p class="mp-title">Your next great walkthrough</p>
+                  <span class="mp-bar" style="width:44%"></span>
+                  <div class="mp-stats">
+                    <div><b>12</b><span class="mp-bar"></span></div>
+                    <div><b>4</b><span class="mp-bar" style="width:62%"></span></div>
+                    <div><b>28</b><span class="mp-bar" style="width:84%"></span></div>
+                  </div>
+                  <div class="mp-card">
+                    <p class="mp-sub">Project checklist</p>
+                    <ul>
+                      <li>Prepare your workspace</li>
+                      <li>Capture the essential steps</li>
+                      <li>Review and share with your team</li>
+                    </ul>
+                    <span class="mp-btn">Share guide</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="vid-cursor" aria-hidden="true"><svg viewBox="0 0 14 21"><path d="M1 1v16l4-3.6 3 6.6 2.6-1.1-3-6.4H13z"/></svg></span>
+            <span class="vid-zoom" aria-hidden="true">Zoom 1.0×</span>
+            <span class="vid-caption" aria-hidden="true"></span>
+          </div>
+          <div class="timeline" aria-label="Timeline. Drag to scrub.">
+            <div class="tl-row tl-ruler"><span class="tl-label"></span><div class="tl-lane"><i>0s</i><i>2s</i><i>4s</i><i>6s</i><i>8s</i><i>10s</i></div></div>
+            <div class="tl-row"><span class="tl-label">Annotations</span><div class="tl-lane"><span class="clip clip-ann" style="left:52%;width:40%">Show exactly what matters</span></div></div>
+            <div class="tl-row"><span class="tl-label">Zoom</span><div class="tl-lane"><span class="clip clip-zoom" style="left:30%;width:34%">Zoom · follow cursor</span></div></div>
+            <div class="tl-row"><span class="tl-label">Video</span><div class="tl-lane"><span class="clip clip-video" style="left:0;width:100%"></span></div></div>
+            <div class="tl-row"><span class="tl-label">Narration</span><div class="tl-lane"><span class="clip clip-audio" style="left:0;width:100%"></span></div></div>
+            <div class="tl-scrub"><span class="tl-head"></span></div>
+          </div>
+        </div>
+      </div>
+      <p class="demo-hint" aria-live="polite">Pick a tool, then drag on the picture. Tap with Step to add numbered steps.</p>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="toolkit">
   <div class="wrap">
     <header class="section-head">
-      <p class="kicker"><span>01</span> / The toolkit</p>
+      <p class="kicker"><span>02</span> / The toolkit</p>
       <h2>Seven workspaces.<br>One studio.</h2>
       <p class="section-lede">Capture, annotate, edit, narrate and review in one window. Every object stays editable until you export, so the guide you made last month is still a starting point, not a flattened picture.</p>
     </header>
 
     <div class="cards">
       <article class="card">
-        <img src="images/capture-workflow.png" width="1440" height="960" loading="lazy" alt="Capture Clip settings open over the editor">
+        <picture>
+          <source srcset="animations/capture.png" media="(prefers-reduced-motion: reduce)">
+          <source srcset="animations/capture.webp" type="image/webp">
+          <img src="animations/capture.gif" width="720" height="480" loading="lazy" alt="Animation: a region is dragged out and captured, then an arrow, numbered steps and a callout are added">
+        </picture>
         <div class="card-body">
           <p class="card-num"><span>01</span> Capture</p>
           <h3>Capture Clip &amp; Capture Video</h3>
@@ -108,7 +258,11 @@
       </article>
 
       <article class="card">
-        <img src="images/image-workflow.png" width="1440" height="960" loading="lazy" alt="A three-step image guide with the Focus window properties">
+        <picture>
+          <source srcset="animations/steps.png" media="(prefers-reduced-motion: reduce)">
+          <source srcset="animations/steps.webp" type="image/webp">
+          <img src="animations/steps.gif" width="720" height="480" loading="lazy" alt="Animation: three clicks are recorded and each becomes a numbered step in a guide, ready to export as PDF">
+        </picture>
         <div class="card-body">
           <p class="card-num"><span>02</span> Image guides</p>
           <h3>Point out what matters</h3>
@@ -118,7 +272,11 @@
       </article>
 
       <article class="card">
-        <img src="images/video-workflow.png" width="1440" height="960" loading="lazy" alt="The video editor timeline with annotation, video and voiceover tracks">
+        <picture>
+          <source srcset="animations/video.png" media="(prefers-reduced-motion: reduce)">
+          <source srcset="animations/video.webp" type="image/webp">
+          <img src="animations/video.gif" width="720" height="480" loading="lazy" alt="Animation: the playhead crosses the timeline, the preview zooms in on the cursor and a caption types in">
+        </picture>
         <div class="card-body">
           <p class="card-num"><span>03</span> Video editor</p>
           <h3>Screen video with context</h3>
@@ -128,7 +286,11 @@
       </article>
 
       <article class="card">
-        <img src="images/privacy-review.png" width="1440" height="960" loading="lazy" alt="Export video listing a tracked redaction that needs review">
+        <picture>
+          <source srcset="animations/privacy.png" media="(prefers-reduced-motion: reduce)">
+          <source srcset="animations/privacy.webp" type="image/webp">
+          <img src="animations/privacy.gif" width="720" height="480" loading="lazy" alt="Animation: a page is scanned, personal details are covered and stay covered as it scrolls, and a new email is flagged for review">
+        </picture>
         <div class="card-body">
           <p class="card-num"><span>04</span> Privacy review</p>
           <h3>Review before you share</h3>
@@ -138,7 +300,11 @@
       </article>
 
       <article class="card">
-        <img src="images/effects-workstation.png" width="962" height="768" loading="lazy" alt="The Effects Workstation with a parametric EQ and a vocal chain">
+        <picture>
+          <source srcset="animations/audio.png" media="(prefers-reduced-motion: reduce)">
+          <source srcset="animations/audio.webp" type="image/webp">
+          <img src="animations/audio.gif" width="720" height="480" loading="lazy" alt="Animation: EQ nodes shape the curve, the effects chain switches on and an uneven narration waveform evens out">
+        </picture>
         <div class="card-body">
           <p class="card-num"><span>05</span> Narration &amp; audio</p>
           <h3>Narration that sounds finished</h3>
@@ -173,7 +339,7 @@
 <section class="section" id="who">
   <div class="wrap">
     <header class="section-head">
-      <p class="kicker"><span>02</span> / Who it's for</p>
+      <p class="kicker"><span>03</span> / Who it's for</p>
       <h2>Built for power users.<br>Easy on day one.</h2>
       <p class="section-lede">Most power users start with a quick screenshot. It's the same app and the same project files, so the depth is there when you need it.</p>
     </header>
@@ -224,7 +390,7 @@
 <section class="section" id="principles">
   <div class="wrap">
     <header class="section-head">
-      <p class="kicker"><span>03</span> / Principles</p>
+      <p class="kicker"><span>04</span> / Principles</p>
       <h2>The rules every<br>feature follows.</h2>
     </header>
     <ol class="principles">
@@ -265,7 +431,7 @@
 <section class="section" id="download">
   <div class="wrap">
     <header class="section-head">
-      <p class="kicker"><span>04</span> / Get started</p>
+      <p class="kicker"><span>05</span> / Get started</p>
       <h2>Download the beta.</h2>
       <p class="section-lede">Version 1.0.0-beta.3 for Windows 10 and 11 (64-bit). Free, with no account and no subscription.</p>
     </header>
@@ -364,5 +530,6 @@
 </footer>
 
 <script src="site.js" defer></script>
+<script src="demo.js" defer></script>
 </body>
 </html>
